@@ -3,4 +3,5 @@ export default [
     { path: '/404', component: () => import('./pages/NotFound.vue') },
     { path: '', component: () => import('./pages/Home.vue') },
     { path: '/about', component: () => import('./pages/About.vue') },
+    { path: '/tools', component: () => import('./pages/Tools.vue') },
 ]

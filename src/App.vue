@@ -7,8 +7,10 @@ import { theme } from './vuex-store/theme';
 </script>
 
 <template>
-  <div class="flex flex-col h-screen bg-base-100" :data-theme="theme">
+  <div class="flex flex-col h-screen bg-base-100 items-center text-center" :data-theme="theme">
     <NavBar />
-    <router-view></router-view>
+    <div class="grow">
+      <router-view></router-view>
+    </div>
   </div>
 </template>

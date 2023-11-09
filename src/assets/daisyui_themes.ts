@@ -10,14 +10,14 @@ const themesOrg = {
         "cmyk",
         // "valentine",
         "garden",
-        // "lofi",
-        // "pastel",
+        "lofi",
+        "pastel",
         "fantasy",
-        // "wireframe",
+        "wireframe",
         "autumn",
         "acid",
         // "lemonade",
-        // "winter",
+        "winter",
     ],
     'dark': [
         "dark",
@@ -26,11 +26,11 @@ const themesOrg = {
         "halloween",
         "forest",
         "black",
-        // "luxury",
+        "luxury",
         "business",
         "night",
         "dracula",
-        // "coffee",
+        "coffee",
     ]
 }
 

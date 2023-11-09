@@ -5,13 +5,14 @@ import { theme as usedTheme, list_themes, changeTheme } from '../vuex-store/them
 </script>
 
 <template>
-    <div class="navbar bg-base-300 flex justify-between">
-        <div class="">
+    <div class="navbar bg-base-300">
+        <div class="navbar-start">
             <router-link class="btn btn-ghost" to="/">Home</router-link> |
             <router-link class="btn btn-ghost" to="/about">About</router-link> |
+            <router-link class="btn btn-ghost" to="/tools">Tools</router-link> |
             <router-link class="btn btn-ghost" to="/non-existent-path">Broken Link</router-link>
         </div>
-        <div>
+        <div class="navbar-end gap-2">
             <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost rounded-btn">Theme</label>
                 <div tabindex="0"
