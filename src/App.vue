@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 import "./index.css";
+
+import NavBar from "./components/NavBar.vue";
+
+import { theme } from './vuex-store/theme';
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline mb-10">Hello Vue!</h1>
-  <HelloWorld msg="Vite + Vue"/>
+  <div class="flex flex-col h-screen bg-base-100" :data-theme="theme">
+    <NavBar />
+    <router-view></router-view>
+  </div>
 </template>
