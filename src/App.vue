@@ -4,6 +4,11 @@ import "./index.css";
 import NavBar from "./components/NavBar.vue";
 
 import { theme } from './vuex-store/theme';
+
+console.log(import.meta.env.MODE);
+console.log(import.meta.env.VITE_API_URL);
+console.log(import.meta.env.VITE_LOGGER_URL);
+console.log(import.meta.url);
 </script>
 
 <template>
