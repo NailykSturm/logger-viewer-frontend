@@ -32,11 +32,11 @@ function sendPing(back: string) {
         addToListResponse({
             date: new Date(),
             route: `${back}/ping`,
-            code: err.code,
-            status: err.status,
-            data: JSON.stringify(err.data)
+            code: err.response ? err.response.statusText : err.code,
+            status: err.response ? err.response.status : err.status,
+            data: JSON.stringify(err.response ? err.response.data : err.data)
         })
-    })
+    });
 }
 
 function sendPingMultiple() {
@@ -52,11 +52,11 @@ function sendPingMultiple() {
         addToListResponse({
             date: new Date(),
             route: `api/ping/rec`,
-            code: err.response.statusText,
-            status: err.response.status,
-            data: JSON.stringify(err.response.data)
+            code: err.response ? err.response.statusText : err.code,
+            status: err.response ? err.response.status : err.status,
+            data: JSON.stringify(err.response ? err.response.data : err.data)
         })
-    })
+    });
 }
 
 </script>

@@ -1,8 +1,7 @@
 import axios, { AxiosProgressEvent, AxiosRequestConfig, AxiosResponse } from 'axios';
 
-const url = 'http://localhost:3550/';
-const url2 = 'http://localhost:3660/';
-
+const url = import.meta.env.VITE_API_URL || 'http://localhost:3550/';
+const url2 = import.meta.env.VITE_LOGGER_URL || 'http://localhost:3660/';
 const config: AxiosRequestConfig = {
   headers: {
     Accept: 'application/json',
