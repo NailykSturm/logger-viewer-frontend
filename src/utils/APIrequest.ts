@@ -5,7 +5,10 @@ const url2 = import.meta.env.VITE_LOGGER_URL || 'http://localhost:3660/';
 const config: AxiosRequestConfig = {
   headers: {
     Accept: 'application/json',
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
   },
+  withCredentials: true,
 }
 
 function buildRoute(route: string) {
